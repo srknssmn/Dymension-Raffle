@@ -11,11 +11,13 @@ window.onload = () => {
 
 let connectWalletButton = document.querySelector('#connectWallet')
 let connectSection = document.querySelector('#connectSection')
+const buyTicket = document.querySelector('#buyTicket');
 
 async function isConnected() {
     const accounts = await ethereum.request({method: 'eth_accounts'});       
     if (accounts.length) {
         connectSection.hidden = await true;
+        buyTicket.disabled = false;
         await console.log(`You're connected to: ${accounts[0]}`);
         checkLottery();
         checkTicketPrize();
@@ -31,5 +33,6 @@ async function isConnected() {
     } else {
         console.log("Metamask is not connected");
         connectSection.hidden = await false;
+        buyTicket.disabled = true;
     }
 }
