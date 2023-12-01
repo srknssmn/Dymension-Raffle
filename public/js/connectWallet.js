@@ -1,4 +1,4 @@
-import {verifyNetwork} from "/public/js/verifyNetwork.js";
+import {verifyNetwork} from "/js/verifyNetwork.js";
 document.querySelector("#connectWallet").addEventListener('click' , connectWalletfunc)
 
 async function connectWalletfunc() {

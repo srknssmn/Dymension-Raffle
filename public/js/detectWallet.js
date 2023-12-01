@@ -1,9 +1,9 @@
-import {checkLottery} from "/public/js/checkLottery.js";
-import {checkTicketPrize} from "/public/js/checkTicketPrize.js";
-import {checkTicketCount} from "/public/js/checkUserTicket.js";
-import {checkNFT} from "/public/js/checkNFT.js";
-import {checkWinner} from "/public/js/checkWinner.js";
-import {usersArrayFunc} from "/public/js/checkUserArray.js";
+import {checkLottery} from "/js/checkLottery.js";
+import {checkTicketPrize} from "/js/checkTicketPrize.js";
+import {checkTicketCount} from "/js/checkUserTicket.js";
+import {checkNFT} from "/js/checkNFT.js";
+import {checkWinner} from "/js/checkWinner.js";
+import {usersArrayFunc} from "/js/checkUserArray.js";
 
 window.onload = () => {
     isConnected();
@@ -11,7 +11,6 @@ window.onload = () => {
 
 let connectWalletButton = document.querySelector('#connectWallet')
 let connectSection = document.querySelector('#connectSection')
-let lotteryStatusDiv = document.querySelector('#lotteryStatusDiv')
 
 async function isConnected() {
     const accounts = await ethereum.request({method: 'eth_accounts'});       

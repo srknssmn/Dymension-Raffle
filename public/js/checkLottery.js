@@ -1,5 +1,5 @@
-import {RAFFLE_ADDRESS} from "/public/constants/address.js";
-import {RAFFLE_ABI} from "/public/constants/abi.js";
+import {RAFFLE_ADDRESS} from "/constants/address.js";
+import {RAFFLE_ABI} from "/constants/abi.js";
 
 const lotteryStatusDiv = document.querySelector('#lotteryStatusDiv');
 const lotteryStatusSpan = document.querySelector('#lotteryStatusSpan');

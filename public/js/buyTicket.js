@@ -1,7 +1,7 @@
-import {RAFFLE_ADDRESS} from "/public/constants/address.js";
-import {RAFFLE_ABI} from "/public/constants/abi.js";
-import {connectWalletfunc} from "/public/js/connectWallet.js";
-import {verifyNetwork} from "/public/js/verifyNetwork.js";
+import {RAFFLE_ADDRESS} from "/constants/address.js";
+import {RAFFLE_ABI} from "/constants/abi.js";
+import {connectWalletfunc} from "/js/connectWallet.js";
+import {verifyNetwork} from "/js/verifyNetwork.js";
 
 const modalButtonOpen = document.querySelector('#modalButtonOpen')
 const modal2ButtonOpen = document.querySelector('#modal2ButtonOpen')
